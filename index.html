@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/x-icon" href="images/schoollogo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Import Bootstrap 5-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    /* contact */
+    #contact {
+      padding: 10vw 3vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #contact .getin {
+      width: 350px;
+    }
+
+    #contact .form {
+      width: 60%;
+      padding: 0px 5px;
+      border-radius: 10px;
+    }
+
+    .contact-h1 {
+      color: rgb(0, 0, 107);
+      font-weight: bold;
+      font-size: 220%;
+      line-height: 100px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    #contact .getin p {
+      color: #686875;
+      line-height: 24px;
+      margin-bottom: 33px;
+      padding-bottom: 25px;
+
+    }
+
+    .form label {
+      display: block;
+      text-align: start;
+      margin-bottom: .5rem;
+      letter-spacing: 1px;
+    }
+
+    #contact .form p {
+      color: #686875;
+      line-height: 24px;
+      padding-bottom: 25px;
+    }
+
+    #contact .form .form-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    #contact .form .form-col input,
+    #contact .form .form-col input {
+      width: 99%;
+      font-size: 14px;
+      font-weight: 400;
+      color: #686875;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    #contact .form .form-row input {
+      width: 99%;
+      font-size: 14px;
+      font-weight: 400;
+      color: #686875;
+      padding: 10px 60px;
+      margin-bottom: 20px;
+    }
+
+    #contact .form .form-col textarea {
+      width: 99%;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 3px;
+      background: rgb(255, 255, 255);
+      outline: none;
+      padding: 3px 10px;
+      margin-bottom: 20px;
+    }
+
+    #contact .getin h3 {
+      color: rgb(0, 0, 107);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+
+    #contact .getin .getin-details div {
+      display: flex;
+    }
+
+    #contact .getin .getin-details div .get {
+      font-size: 16px;
+      line-height: 22px;
+      color: rgb(0, 0, 107);
+      margin-right: 20px;
+    }
+
+    #contact .getin .getin-details div p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 15px;
+      ;
+    }
+
+    #contact .form button {
+      font-size: .9rem;
+      padding: 10px 26px;
+      background: rgb(0, 0, 107);
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+    }
+
+    span {
+      color: red;
+      font-weight: 900;
+    }
+
+    #map {
+      width: 100%;
+      height: 70vh;
+      margin-bottom: 4vw;
+    }
+
+    #map iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    nav img {
+      width: 90px;
+      cursor: pointer;
+
+    }
+
+    /* Contact End */
+    .fab.fa-twitter {
+      font-family: sans-serif;
+    }
+
+    .fab.fa-twitter::before {
+      content: "𝕏";
+      font-size: 1.2em;
+    }
+
+    /* carousel */
+    .carousel-item {
+      height: 100vh;
+      min-width: 300px;
+    }
+
+    .bg-1 {
+      background-image: url(images/schoolbuilding1.jpg);
+    }
+
+    .bg-2 {
+      background-image: url(images/schoolbuilding1.jpg);
+    }
+
+    .bg-3 {
+      background-image: url(images/schoolbuilding1.jpg);
+    }
+
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+      background-size: cover;
+    }
+
+    .carousel-caption {
+      bottom: 220px;
+      z-index: 2;
+    }
+
+    .carousel-caption h5 {
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .carousel-caption p {
+      width: 70%;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+
+
+    .carousel-inner::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(71, 79, 194, 0.5);
+      z-index: 1;
+    }
+
+    /* Carousel End */
+
+    @media (max-width: 769px) {
+      .form label {
+        display: block;
+        text-align: start;
+        margin-bottom: .5rem;
+        letter-spacing: 1px;
+      }
+
+      #contact .form p {
+        color: #686875;
+        line-height: 24px;
+        padding-bottom: 25px;
+      }
+
+      #contact .form .form-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      #contact .form .form-col input,
+      #contact .form .form-col input {
+        width: 99%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #686875;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+      }
+
+      #contact .form .form-row input {
+
+        font-size: 14px;
+        font-weight: 400;
+        color: #686875;
+        padding: 10px 80px;
+        margin-bottom: 20px;
+      }
+
+      #contact .form .form-col textarea {
+        width: 99%;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 3px;
+        background: rgb(255, 255, 255);
+        outline: none;
+        padding: 3px 10px;
+        margin-bottom: 20px;
+      }
+
+      #contact .form {
+        width: 90%;
+        padding: 0px 5px;
+        border-radius: 10px;
+      }
+
+      /* Carousel */
+      .carousel-caption {
+        bottom: 350px;
+        z-index: 2;
+      }
+
+      .carousel-caption h5 {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 500;
+        width: 100%;
+      }
+
+      .carousel-caption p {
+        width: 100%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.9;
+      }
+    }
+
+
+
+    @media (max-width: 475px) {
+
+
+      /* Carousel */
+      .carousel-item {
+        height: 70vh;
+        min-width: 300px;
+      }
+
+      .carousel-caption {
+        bottom: 20px;
+        z-index: 2;
+      }
+
+      .carousel-caption h5 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .carousel-caption p {
+        width: 100%;
+        margin: auto;
+        font-size: 18px;
+
+      }
+
+      /* Contact */
+      #contact {
+        padding: 1% 4vw;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+      }
+
+      #contact .getin {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      #contact .form {
+        width: 100%;
+        padding: 40px 30px;
+      }
+
+      #contact .form .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      #contact .form .form-row input {
+        width: 100%;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navigation -->
+  <nav>
+    <img src="images/schoollogo.png" alt="schoollogo">
+    <h6 class="gtc">Government Technical College Ado-Soba</h6>
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a class="active" href="index.html">Home</a>
+        </li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Sections.html">Sections</a></li>
+        <li><a href="Admission.html">Admission</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+
+      </ul>
+      <img id="menu-btn" src="images/menu button.png" alt="">
+    </div>
+  </nav>
+  </div>
+  </nav>
+  <!-- Home -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-1">
+
+        <div class="carousel-caption ">
+          <h5>Government Technical College Ado Soba</h5>
+          <p> Welcome To Government Technical College a haven of innovation, growth, and boundless oppurnities</p>
+          <a class="ann" href="">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="carousel-item bg-2">
+
+        <div class="carousel-caption ">
+          <h5>Government Technical College Ado Soba</h5>
+          <p>A college of crucible of creativity, a forge of technical brillance, and a nusery for future leaders</p>
+          <a class="ann" href="">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="carousel-item bg-3">
+
+        <div class="carousel-caption ">
+          <h5>Government Technical College AdoSoba</h5>
+          <p>A well design college with a curriculum design to ignite your potential and nuturing
+            your aspirations</p>
+          <a class="ann" href="">Read More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section id="features">
+
+    <h1 class="ffff">Our Features</h1>
+
+    <p> </p>
+    <div class="fea-base">
+      <div class="fea-box">
+        <i class="fa fa-certificate"></i>
+        <h3>Certificate
+        </h3>
+        <p>Symbolizes the achievement and recognition of student's academic milestones</p>
+      </div>
+      <div class="fea-box">
+        <i class="fas fa-books"></i>
+        <h3>Courses</h3>
+        <p>Symbolizes the wide range of educational programs offered at the college</p>
+      </div>
+      <div class="fea-box">
+        <i class="fa fa-award"></i>
+        <h3>Awards
+        </h3>
+        <p>Symbolizes the recognition of excellence and outstanding performance </p>
+      </div>
+      <div class="fea-box">
+        <i class="fas fa-users"></i>
+        <h3>Team Work</h3>
+        <p>Symbolizes the collaboration and collective effort among students</p>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section>
+    <div class="home-about-us">
+      <div class="home-about">
+        <h1 class="home-about-heading">About Us</h1>
+
+        <p class="home-about-p">
+          The establishment of more industries of Lagos State demanded for the production of technicians craftmen and
+          craftwomen and accompanying needs for more technical colleges apart from the Federal owned Technical College,
+          Yaba. The Lagos state Ministry of Education was becoming aware of the needs for more technical colleges hence
+          the establishment of Government Technical College Ado Soba The College first started as a vocational
+          college, but later has her status raised to technical college in 1989.
+
+        </p>
+        <a class="an" href="about.html">Read More <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="Statement">
+        <h1 class="Vision-statement">Vision Statement <br><i class="fa fa-earth"></i></h1>
+
+        <p class="Vision">"To be the best Technical College that will produce students who can apply scientific
+          knowledge to the improvement and solution of environmental problems for the use and convenience of man"</p>
+        <h1 class="Mission-Statement">Mission Statement <br> <i class="fa fa-book-alt"></i></h1>
+        <p class="Mission">"To produce quality and excellent students that will reach their full potential, through a
+          structed skilled training, which will not only make them enterprising and self-reliant, but a highly motivated
+          products for our end-users-the industries and tertiary institutions. </p>
+        <h1 class="moto">Our Motto <br><i class="fa fa-quote-left"></i></h1>
+        <p class="our-moto">There's Dignity In Labour. </p>
+      </div>
+    </div>
+  </section>
+  <!--News-->
+  <section id="news">
+    <h1>News & Events</h1>
+    <div class="news">
+      <a href="Events.html"><img src="images/interhouse sport 1.jpg" alt=""></a>
+      <a href="News.html"><img src="images/Debate Competition 1.png" alt=""></a>
+      <a href="News.html"><img src="images/benedict justice in japan 1.jpg" alt=""></a>
+      <a href="News.html"><img src="images/interhouse sport 2.jpg" alt=""></a>
+      <a href="News.html"><img src="images/prefect 2024-2025 1.jpg" alt=""></a>
+      <a href="Events.html"><img src="images/interhouse sport 4.jpg" alt=""></a>
+    </div>
+
+  </section>
+
+
+  <!-- teacher -->
+  <section class="teacher" id="teacher">
+    <h1>Our College Teams</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/principal.png" alt="">
+          <div class="share">
+            <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="icons" href=""><i class="fab fa-whatsapp"></i></a>
+            <a class="icons" href=""><i class="fa fa-phone-alt"></i></a>
+          </div>
+        </div>
+        <div class="content">
+          <h5>Folarin Sukanmi Quadri</h5>
+          <p class="tea-p"> Principal </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/vice principal admin.png" alt="">
+          <div class="share">
+            <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="icons" href=""><i class="fab fa-whatsapp"></i></a>
+            <a class="icons" href=""><i class="fa fa-phone-alt"></i></a>
+          </div>
+        </div>
+        <div class="content">
+          <h5>Shobo R. Ebun</h5>
+          <p class="tea-p">Vice Principal Administration</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/vice principal acad.png" alt="">
+          <div class="share">
+            <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="icons" href=""><i class="fab fa-whatsapp"></i></a>
+            <a class="icons" href=""><i class="fa fa-phone-alt"></i></a>
+          </div>
+        </div>
+        <div class="content">
+          <h5>Osai O. Nsolu</h5>
+          <p class="tea-p">Vice Principal Administration</p>
+        </div>
+      </div>
+    </div>
+    <a class="teacher-viewall" href="College Management Teams.html">View All <i class="fa fa-arrow-right"></i></a>
+  </section>
+
+  <!-- Courses -->
+
+  <section id="course">
+    <h1>Sections</h1>
+    <div class="course-box">
+      <div class="courses">
+        <a href=""><img class="cou1" src="images/computer craft.jpg" alt=""></a>
+        <div class="course-1">
+          <span></span>
+          <h5 class="text">Computer Craft Practice</h5>
+          <hr>
+          <div>
+            <p>is a specialized field that involves the application of computing principles and technologies to
+              create... </p>
+            <a class="an" href="">Visit Section <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses">
+        <a href=""><img class="cou2" src="images/electronics works.jpg" alt="" class="row1"></a>
+        <div class="course-2">
+          <span></span>
+          <h5 class="text">Electronics Works</h5>
+          <hr>
+          <div>
+            <p>is a specialized field that deals with the desigh, development, and application of devices, circuit, and
+              system...</p>
+            <a class="an" href="">Visit Section <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses">
+        <a href=""><img class="cou3" src="images/electrical intallation and maintenance works.jpg" alt=""
+            class="row2"></a>
+        <div class="course-3">
+          <spa></span>
+            <h5 class="text">Elecrical Installation And Maintenence Works</h5>
+            <hr>
+            <div>
+              <p>is a specialized field that focuses on the study and application of electrical systems, circuit...
+              </p>
+            </div><a class="an" href="">Visit Section <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+  </section>
+
+  <!-- Registration-->
+
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <div class="form">
+      <h1 class="contact-h1"> Contact Us</h1>
+      <div class="form-row">
+        <div>
+          <label for="">Name<span>*</span></label>
+          <input type="text">
+        </div>
+        <div>
+          <label for="">Email address<span>*</span></label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="form-col">
+        <label for="">Subject<span>*</span></label>
+        <input type="text">
+      </div>
+      <div class="form-col">
+        <label for="">Message<span>*</span></label>
+        <textarea name="" id="" cols="30" rows="8"></textarea>
+      </div>
+      <div class="form-col">
+        <button>Submit</button>
+      </div>
+    </div>
+    <div>
+    </div>
+  </section>
+
+  </div>
+  <footer>
+    <div class="footer-col">
+      <h4>INFORMATION</h4>
+      <a href="contact.html">
+        <li>Contact</li>
+      </a>
+      <a href="about.html">
+        <li>About Us</li>
+      </a>
+      <a href="news.html">
+        <li>News</li>
+      </a>
+      <a href="sections.html">
+        <li>Sections</li>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>USEFUL LINKS</h4>
+      <li>Our College Team</li>
+      <a href="registraton.html">
+        <li>Admission</li>
+      </a>
+      <a href="about.html">
+        <li>Features</li>
+      </a>
+      <a href="events.html">
+        <li>Events</li>
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h4>NEWSLETTER</h4>
+      <p>Get latest updates offers </p>
+      <div class="subscribe">
+        <input type="text" placeholder="Your Email address">
+        <br><a href="" class="yellow">SUBSCRIBE</a>
+
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <p>Address: <br> Government Technical College,<br> Ado-Soba,<br>Festac Extension, <br> Abule Ado Bus Stop
+        <br>Lagos
+        Badagary Expressway, lagos</p>
+      <p>Phone: <br> +234 000 000 000 0000 <br> +234 000 000 000 0000</p>
+      <p>Email: <br>governmentechnicalcollege <br> adosoba@gmail.com</p>
+    </div>
+    <div class="copyright">
+      <p> Copyright ©2024 All Right Reserve Designed by <br></p>
+      <di class="pro-linkss">
+        <h4 class="copy-h4">FOLLOW US</h4>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+  </footer>
+  <script>
+    $("#menu-btn").click(function () {
+      $("nav .navigation ul").addClass("active")
+    });
+
+    $("#menu-close").click(function () {
+      $("nav .navigation ul").removeClass("active")
+    });
+
+  
+    document.addEventListener('contextmenu',(e) => {
+            e.preventDefault()
+            
+            return false
+
+        })
+        document.addEventListener("keydown", function (event) { if (event.ctrlKey){ 
+          event.preventDefault();
+      }
+      if(event.keyCode == 123) {
+          event.preventDefault();
+          }
+          })
+        document.addEventListener('Keydown',(e) => {
+             if(e.ctrlKey || e.keyCode == 123){
+                 e.stopPropagation()
+                 e.preventDefault()
+             }
+            
+            })
+  </script>
+
+</body>
+
+</html>
